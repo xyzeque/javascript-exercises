@@ -8,8 +8,12 @@ const subtract = function(a, b) {
   return diff;
 };
 
-const sum = function() {
-	
+const sum = function(arr) {
+	let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
 };
 
 const multiply = function() {
