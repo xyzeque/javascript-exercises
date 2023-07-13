@@ -16,7 +16,12 @@ const sum = function(arr) {
   return sum;
 };
 
-const multiply = function() {
+const multiply = function(...num) {
+  if (num.length === 0) {
+    return 0;
+  }
+
+  return num.reduce((accumulator, current) => accumulator * current);
 
 };
 
